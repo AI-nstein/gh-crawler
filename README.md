@@ -17,7 +17,7 @@ $ export DATA_HOME=[path_to_output_dir]
 Next, perform setup by running:
 
 ```
-$ ./collect_gharchive.sh MONTH YEAR 
+$ collect_data/collect_gharchive.sh MONTH YEAR 
 ```
 
 The `collect_gharchive.sh` script collects commit data from [GH Archive](https://www.gharchive.org/) and sets up the output directory by creating a folder `$DATA_HOME/data/month-day-year:hour` for each hour in the input month and year. The commit data includes a JSON array with entires for each commit in the specified time period. Each entry is a JSON object including fields for `repo_name`, `repo_url`, `buggy_hash`, `fixed_hash`, `commit_msg`and time `pushed_at`. You can also provide your own list of commits from any time period in the specified format. 
