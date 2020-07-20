@@ -97,7 +97,7 @@ $ export NODE_PATH=[path_to_node_modules/node_modules/]
 Now we are ready to generate ASTs and AST diffs:
 
 ```
-get_ast_diff.py 
+ast_diff/get_ast_diff.py 
 usage: Generate asts and ast diffs from a corpus of buggy and fixed javascript pairs
        [-h] [--input_folder INPUT_FOLDER] [--output_folder OUTPUT_FOLDER]
        [--mode MODE] [--np NUM_PROCESSES]
